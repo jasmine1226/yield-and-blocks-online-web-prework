@@ -12,7 +12,7 @@ end
 array = ["Tim", "Tom", "Jim"]
 
 hello_t(array) do |name|
-  if name == nil
+  if array == []]
     puts "Hey! No block was given!\n"
   elsif name.start_with?("T")
     puts "Hi, #{name}"
