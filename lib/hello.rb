@@ -5,13 +5,13 @@ def hello_t(array)
     yield array[i]
     i+=1
   end
-
     return array
 end
 
 # call your method here!
+array = ["Tim", "Tom", "Jim"]
 
-hello_t(["Tim", "Tom", "Jim"]) do |name|
+hello_t() do |name|
   if name == nil
     puts "Hey! No block was given!\n"
   elsif name.start_with?("T")
