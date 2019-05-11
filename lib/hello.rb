@@ -12,10 +12,9 @@ end
 # call your method here!
 
 hello_t(["Tim", "Tom", "Jim"]) do |name|
-  if array = []
+  if name == nil
     puts "Hey! No block was given!\n"
-  end
-  if name.start_with?("T")
+  elsif name.start_with?("T")
     puts "Hi, #{name}"
   end
 end
