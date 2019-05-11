@@ -1,14 +1,14 @@
 def hello_t(array)
   i = 0
-  if array = []
-    puts "Hey! No block was given!\n"
-  end
+
   while i < array.length
     yield array[i]
     i+=1
   end
-
-  return array
+  if array = []
+    puts "Hey! No block was given!\n"
+  end
+    return array
 end
 
 # call your method here!
