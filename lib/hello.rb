@@ -11,7 +11,7 @@ end
 # call your method here!
 array = ["Tim", "Tom", "Jim"]
 
-hello_t() do |name|
+hello_t(array) do |name|
   if name == nil
     puts "Hey! No block was given!\n"
   elsif name.start_with?("T")
